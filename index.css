@@ -1,0 +1,102 @@
+/* Reset default spacing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Page background */
+body {
+  background: linear-gradient(to right, #74ebd5, #9face6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Header (search bar) */
+header {
+  margin-top: 40px;
+}
+
+form {
+  display: flex;
+  gap: 10px;
+}
+
+input[type="search"] {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  width: 200px;
+  font-size: 14px;
+}
+
+input[type="submit"] {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  background-color: #5a67d8;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+input[type="submit"]:hover {
+  background-color: #434190;
+}
+
+/* Main weather card */
+.weather-app {
+  background: white;
+  margin-top: 30px;
+  padding: 25px 30px;
+  border-radius: 15px;
+  width: 320px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Weather info text */
+.weather-info h1 {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.weather-info p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Temperature section */
+.temperature {
+  font-size: 22px;
+  text-align: right;
+}
+
+.temperature span {
+  font-size: 28px;
+  display: block;
+}
+
+/* Footer */
+footer {
+  margin-top: 40px;
+  font-size: 13px;
+  color: #333;
+  text-align: center;
+  padding: 10px;
+}
+
+footer a {
+  color: #5a67d8;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
